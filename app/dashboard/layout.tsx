@@ -18,8 +18,8 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   return (
     <LoginPageGuard>
       <SessionTimeoutWrapper
-        timeoutMinutes={.3}
-        countdownSeconds={10}
+        timeoutMinutes={.3}   // Normal is 15 minutes
+        countdownSeconds={10}  // Normal is 60 seconds
         onLogout={handleTimeoutLogout}
       >
         <div className="flex flex-col min-h-screen">
